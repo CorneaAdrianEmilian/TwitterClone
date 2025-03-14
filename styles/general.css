@@ -10,7 +10,7 @@ padding-right: 38.17%;
 margin: 0;
 }
 
-@media (max-width: 1327px)
+@media (max-width: 1550px)
 {
 
   body
@@ -19,7 +19,7 @@ margin: 0;
     
   }
 }
-@media (max-width: 850px)
+@media (max-width: 920px)
 {
   body
   {
