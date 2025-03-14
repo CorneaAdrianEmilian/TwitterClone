@@ -1,0 +1,383 @@
+
+main
+{
+  display: inline-flex;
+  flex-direction: column;
+  
+}
+
+
+.post-grid
+{
+  display: flex;
+  max-width: 100%;
+  flex-direction: column;
+
+}
+
+
+.post
+{
+display: grid;
+grid-template-columns: 50px 1fr;
+
+column-gap: 10px;
+border-color: rgb(47, 51, 54);
+border-width: 0.5px;
+border-style: solid;
+
+padding: 16px;
+}
+
+
+.post-info
+{
+  display: grid;
+  grid-template-columns: 1fr;
+}
+
+.author-info-container
+{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.author-info
+{
+  display: flex;
+  align-items: center;
+  column-gap: 3px;
+
+}
+
+
+.author-name
+{
+  font-weight:bold;
+}
+.author-name:hover
+{
+  text-decoration:underline;
+  cursor: pointer;
+}
+
+.author-address
+{
+  margin-left: 5px;
+  color: rgb(100, 100, 100);
+  white-space: nowrap;
+}
+
+.author-right-buttons-container
+{
+  display: flex;
+
+}
+
+
+
+.profile-picture
+{
+  height: 40px;
+  width: 40px;
+  border-radius: 20px;
+  object-fit:fill;
+  object-position: center;
+  transition: opacity 0.15s;
+}
+
+.profile-picture:hover
+{
+  cursor: pointer;
+  opacity: 0.85;
+}
+
+
+.post-content-container
+{
+  display: flex;
+  border-color:rgb(54, 47, 47);
+  border-width: 0.2px;
+  border-style: solid;
+  flex: 1;
+  border-radius: 16px;
+  overflow: hidden;
+  justify-content: center;
+  margin-top: 10px;
+}
+
+.post-content
+{
+width: 100%;
+}
+
+.post-bar-buttons-container
+{
+  display: flex;
+  height: 20px;
+  margin-top: 14px;
+  justify-content: space-between;
+}
+
+.button-img
+{
+  height: 20px;
+  width: 20px;
+}
+
+.button-count
+{
+font-size: 12px;
+color: rgb(100, 100, 100);
+margin-left: -5px;
+transition: color 0.3s ease-in-out;
+
+}
+
+.buttons-info
+{
+  display: flex;
+  align-items: center;
+  position: relative;
+}
+
+
+.button-hover-color,
+.share-button-hover-color,
+.bookmark-button-hover-color
+{
+display: flex;
+  height: 34.5px;
+  width: 34.5px;
+  transition: background-color 0.3s ;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  position: relative;
+  
+}
+
+
+.post-buttons-right-side
+{
+display: flex;
+column-gap: 8px;
+position: relative;
+align-items: center;
+}
+
+
+
+.buttons-info:hover .button-hover-color,
+.share-button-hover-color:hover,
+.bookmark-button-hover-color:hover,
+.author-right-button-dots:hover .button-hover-color,
+.author-right-button-x:hover .button-hover-color
+{
+  background-color: rgba(29, 155, 240, .5); 
+  cursor: pointer;
+}
+.buttons-info:hover .button-count
+{
+  color: rgb(29, 155, 240); 
+  cursor: pointer;
+}
+
+.buttons-info .tooltip,
+.bookmark-button-hover-color .tooltip,
+.share-button-hover-color .tooltip,
+.author-right-button-x .tooltip,
+.author-right-button-dots .tooltip
+{
+  font-size: 12px;
+  padding: 4px;
+  background-color: rgba(199, 198, 198, 0.7);
+  border-radius: 10%;
+  position: absolute;
+  bottom: -32px;
+  opacity: 0;
+  transition: opacity 0.3s;
+  pointer-events:none ;
+  white-space: nowrap;
+
+}
+
+.buttons-info:hover .tooltip,
+.bookmark-button-hover-color:hover .tooltip,
+.share-button-hover-color:hover .tooltip,
+.author-right-button-x:hover .tooltip,
+.author-right-button-dots:hover .tooltip
+{
+  opacity: 1;
+  transition-delay: 0.5s;
+
+}
+
+
+
+.profile-picture-container,
+.author-address-container,
+.author-name-container
+
+{
+  position: relative;
+  cursor: pointer;
+}
+
+
+
+.profile-picture-tooltip-container
+{
+
+  height: 295px;
+  width: 295px;
+  background-color: black;
+  border-radius: 10%;
+  box-shadow: 0px 0px 15px rgba(177, 177, 177, 0.6);
+  z-index: 105;
+  position: absolute;
+  opacity: 0;
+  padding: 20px;
+  transition: opacity 0.15s;
+  transition-delay: 0.7s;
+  pointer-events: none;
+
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, 2%);
+}
+
+.profile-picture-container:hover  .profile-picture-tooltip-container,
+.author-name-container:hover  .profile-picture-tooltip-container,
+.author-address-container:hover .profile-picture-tooltip-container,
+.profile-picture-tooltip-container:hover
+{
+  opacity: 1;
+  pointer-events:auto;
+}
+
+.top-profile-container-tooltip
+{
+  display: flex;
+  align-items:start;
+  justify-content: space-between;
+  margin-bottom: 10px;
+}
+
+.profile-picture-tooltip
+{
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+  transition: opacity 0.15s;
+}
+
+
+
+.profile-picture-tooltip:hover
+{
+  cursor: pointer;
+  opacity: 0.85;
+}
+
+.tooltip-follow-button
+{
+background-color: white;
+border: 1px solid rgba(206, 206, 206, 0.356);
+border-radius: 20px;
+padding: 10px 15px;
+color: black;
+font-size: 14px;
+font-weight: bold;
+cursor: pointer;
+transition: background-color 0.15s;
+
+}
+
+.tooltip-follow-button:hover
+{
+  background-color: rgb(212, 212, 212);
+}
+
+.tooltip-author-name-container
+{
+  display: flex;
+  column-gap: 5px;
+  align-items: center;
+  margin-bottom: 5px;
+}
+
+.tooltip-author-name
+{
+  font-weight:bold;
+}
+  
+.tooltip-author-name:hover
+{
+text-decoration: underline;
+cursor: pointer;
+}
+
+
+.tooltip-author-address
+{
+  color: rgb(100, 100, 100);
+  margin-bottom: 15px;
+}
+
+
+.tooltip-bottom-info-container
+{
+display: flex;
+justify-content: space-between;
+margin-top: 15px;
+}
+
+.tooltip-following-container:hover,
+.tooltip-followers-container:hover
+{
+  text-decoration: underline;
+  cursor: pointer;
+  text-decoration-color: white;
+}
+
+.tooltip-followers-container,
+.tooltip-following-container
+{
+  color: rgb(100, 100, 100);
+}
+
+.tooltip-following-span,
+.tooltip-followers-span
+{
+  color: white;
+}
+
+
+.tooltip-bottom-button-container
+{
+display: flex;
+justify-content: center;
+margin-top: 15px;
+}
+.tooltip-bottom-button
+{
+display: flex;
+align-items: center;
+column-gap: 5px;
+background-color: black;
+border: 1px solid rgba(206, 206, 206, 0.356);
+border-radius: 20px;
+padding: 10px 55px;
+color: white;
+font-size: 14px;
+font-weight: bold;
+cursor: pointer;
+transition: background-color 0.15s;
+}
+
+.tooltip-bottom-button:hover
+{
+  background-color: rgb(17, 17, 17);
+}

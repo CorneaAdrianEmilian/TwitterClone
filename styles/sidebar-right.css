@@ -1,0 +1,471 @@
+
+
+
+
+.sidebar-right
+{
+
+  display: flex;
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  width: 38.17%;
+  height: 955px;
+  z-index: 101;
+
+
+  flex-direction: column;
+
+
+
+  justify-content: space-between;
+  align-items: start;
+
+}
+
+
+.sidebar-right-content-container
+{
+  display: flex;
+  flex-direction: column;
+  row-gap: 20px;
+  padding: 0 8px;
+  flex-grow: 1;
+  padding-left: 32px;
+  padding-top: 12px;
+}
+
+
+.search-field-container
+{
+
+position:relative;
+
+display: flex;
+align-items: center;
+
+height: 40px;
+width: 100%;
+
+border-color:rgb(54, 47, 47);
+border-width: 0.2px;
+border-style: solid;
+border-radius: 30px;
+
+box-sizing: border-box;
+
+}
+
+.sidebar-right-search-field-icon-container
+{
+padding-left:12px ;
+}
+
+
+.sidebar-right-search-field-icon
+{
+  height: 13px;
+  width: 13px;
+
+}
+
+
+.sidebar-right-search-input
+{
+display: flex;
+padding: 0 16px 0 4px;
+width: 318px;
+background-color: black;
+border:none;
+font-size: 14px;
+outline:none;
+color: white;
+}
+
+.search-field-container:focus-within
+{
+  outline: 2px solid rgb(29, 155, 240);
+}
+
+
+.recent-search-container
+{
+  height: 113px;
+  width: 350px;
+  background-color: black;
+  border-radius: 10px;
+  box-shadow: 0px 0px 15px rgba(177, 177, 177, 0.6);
+
+  position: absolute;
+  transition: opacity 0.15s;
+  transition-delay: 0.7s;
+
+  transform: translate(0%,68%);
+
+  display: flex;
+  flex-direction: column;
+  font-size:20px ;
+  font-weight: bold;
+  z-index: 103;
+
+  opacity: 0;
+  transition: opacity 0.15s;
+  pointer-events: none;
+}
+
+
+.recent-search-header
+{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding: 12px 16px;
+}
+
+.recent-search-header-clear-button
+{
+
+background-color: black;
+border: none;
+color: rgb(29, 155, 240);
+font-size:14px ;
+font-weight: bold;
+padding: 2px 12px;
+
+}
+
+.recent-search-header-clear-button:hover
+{
+  background-color: rgba(29, 155, 240, 0.2); 
+  cursor: pointer;
+  border-radius: 15px;
+}
+
+.search-field-container:focus-within .recent-search-container
+{
+  opacity: 1;
+  pointer-events: auto;
+}
+
+
+.follow-suggest-author-name:hover
+{
+  text-decoration:underline;
+}
+
+
+.recent-search-profile-container,
+.follow-suggest-profile-container
+{
+
+  display: flex;
+  padding: 12px 16px;
+  align-items: center;
+  
+}
+.recent-search-profile-container:hover
+{
+  background-color: rgb(26, 26, 26);
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+
+
+.recent-search-profile-picture,
+.follow-suggest-profile-picture
+{
+height: 40px;
+width: 40px;
+border-radius: 3px;
+}
+
+.recent-search-profile-info-container,
+.follow-suggest-profile-info-container
+{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-grow: 1;
+
+}
+.recent-search-author-info-container,
+.follow-suggest-author-info-container
+{
+display: flex;
+flex-direction: column;
+font-size: 14px;
+margin-left:8px ;
+}
+
+.recent-search-author-address,
+.follow-suggest-author-address
+{
+  color: rgb(100, 100, 100);
+}
+.recent-search-author-medal,
+.follow-suggest-author-medal
+{
+  height: 14px;
+  width: 14px;
+}
+
+.recent-search-author-info-wraparound,
+.follow-suggest-author-info-wraparound
+{
+  position:relative ;
+  display: flex;
+  flex-direction: row;
+  gap: 3px;
+  align-items: center;
+}
+
+
+.recent-search-profile-x-button
+{
+display: flex;
+justify-content: center;
+align-items: center;
+height: 12px;
+width: 12px;
+color: rgb(29, 155, 240);
+border-radius: 50%;
+padding: 8px;
+
+}
+.recent-search-profile-x-button:hover
+{
+  background-color: rgba(29, 155, 240, 0.2); 
+}
+
+
+
+
+.follow-suggest-container,
+.right-sidebar-news-container
+{
+
+  display: flex;
+  flex-direction: column;
+  border-color:rgb(54, 47, 47);
+  border-width: 0.2px;
+  border-style: solid;
+  border-radius: 20px;
+
+}
+
+
+
+
+.follow-suggest-profile-container:hover
+{
+  background-color: rgb(26, 26, 26);
+  cursor: pointer;
+}
+
+.follow-sugges-header,
+.right-sidebar-news-header
+{
+font-size: 18px;
+font-weight: bold;
+color: white;
+padding: 12px 16px;
+}
+
+
+.follow-suggest-profile-picture
+{
+  border-radius: 50%;
+  transition: opacity 0.15s;
+
+}
+.follow-suggest-profile-picture:hover
+{
+  cursor: pointer;
+  opacity: 0.85;
+}
+
+
+.follow-suggest-follow-button
+{
+  background-color: white;
+  border: 1px solid rgba(206, 206, 206, 0.356);
+  border-radius: 20px;
+  padding: 10px 15px;
+  color: black;
+  font-size: 14px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.15s;
+
+}
+
+.follow-suggest-follow-button:hover
+{
+  background-color: rgb(212, 212, 212);
+}
+
+
+/*
+Reusing the tooltip profile code used in post.css
+*/
+
+.follow-suggest-profile-picture-container,
+.follow-suggest-author-address-container
+{
+display: flex;
+position: relative;
+}
+
+.follow-suggest-author-info-wraparound:hover .profile-picture-tooltip-container,
+.follow-suggest-profile-picture-container:hover .profile-picture-tooltip-container,
+.follow-suggest-author-address-container:hover .profile-picture-tooltip-container,
+.profile-picture-tooltip-container:hover
+{
+  opacity: 1;
+  pointer-events:auto;
+}
+
+
+
+.follow-suggest-show-more-button
+{
+  color: rgb(29, 155, 240);
+  padding: 16px;
+  font-size: 17px;
+  border-bottom-left-radius: 20px;
+  border-bottom-right-radius: 20px;
+}
+
+.follow-suggest-show-more-button:hover
+{
+  background-color: rgb(26, 26, 26);
+  cursor: pointer;
+}
+
+
+.right-sidebar-news-option-container
+{
+  display: flex;
+  flex-direction: column;
+  padding: 12px 16px;
+  row-gap: 5px;
+}
+
+.right-sidebar-news-option-container:hover
+{
+  background-color: rgb(26, 26, 26);
+  cursor: pointer;
+}
+
+
+.right-sidebar-news-option-header
+{
+display: flex;
+justify-content: space-between;
+align-items: center;
+
+}
+
+
+.right-sidebar-news-option-button-container
+{
+  display: flex;
+  position: relative;
+}
+
+
+.right-sidebar-news-option-button-hover
+{
+  position: absolute;
+  width: 34.5px;
+  height: 34.5px;
+  border-radius: 50%;
+  transition: background-color 0.3s;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%); /* Centers the hover effect around the image */
+ 
+}
+
+.right-sidebar-news-option-button-hover:hover {
+  background-color: rgba(29, 155, 240, 0.5);
+  cursor: pointer;
+}
+
+.right-sidebar-news-option-header-text,
+.right-sidebar-news-option-posts-count
+{
+  color: rgb(100, 100, 100);
+}
+.right-sidebar-news-option-button
+{
+  height: 18px;
+  width: 18px;
+}
+
+.right-sidebar-news-option-button-tooltip
+{
+  font-size: 12px;
+  padding: 4px;
+  background-color: rgba(199, 198, 198, 0.7);
+  border-radius: 10%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+
+  transform: translate(-50%, 100%);
+
+  opacity: 0;
+  transition: opacity 0.3s;
+  pointer-events:none ;
+  white-space: nowrap;
+}
+
+.right-sidebar-news-option-button-container:hover .right-sidebar-news-option-button-tooltip
+{
+  opacity: 1;
+  transition-delay: 0.5s;
+
+}
+
+.right-sidebar-news-option-pointOfInterest
+{
+  font-weight: bold;
+  font-size: 17px;
+}
+
+
+
+
+@media(max-width:1150px)
+{
+
+.sidebar-right-search-input
+{
+width: 100%;
+}
+
+.follow-suggest-profile-info-container
+{
+  column-gap: 10px;
+}
+
+.recent-search-container
+{
+width: 100%;
+}
+}
+
+
+@media(max-width:850px)
+{
+
+  .sidebar-right
+  {
+    display: none;
+  }
+
+}

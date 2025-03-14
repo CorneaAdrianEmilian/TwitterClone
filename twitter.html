@@ -1,0 +1,1625 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+  <title>Twitter Clone</title>
+
+  <link rel="stylesheet" href="styles/general.css">
+  <link rel="stylesheet" href="styles/post.css">
+  <link rel="stylesheet" href="styles/header.css">
+  <link rel="stylesheet" href="styles/sidebar-left.css">
+  <link rel="stylesheet" href="styles/sidebar-right.css">
+  </head>
+
+  <body>
+    
+    
+    
+    <nav class="sidebar-left">
+
+      <div class="sidebar-left-content-container">
+
+        <div class="sidebar-options-container">
+  
+  
+          <div class="option-container-logo">
+  
+            <div class="option-container-logo-hover">
+    
+              <div class="option-icon-container">
+                <img class="option-icon" src="side-bar-icons/twitter.png" >
+              </div>
+    
+            </div>
+  
+          </div>
+          
+          <div class="option-container">
+  
+            <div class="option-container-hover">
+    
+              <div class="option-icon-container">
+                <img class="option-icon" src="side-bar-icons/home.png" >
+              </div>
+      
+              <div class="option-text">
+                Home
+              </div>
+
+              <div class="sidebar-left-option-tooltip">Home</div>
+    
+            </div>
+  
+          </div>
+  
+          <div class="option-container">
+  
+            <div class="option-container-hover">
+    
+              <div class="option-icon-container">
+                <img class="option-icon" src="side-bar-icons/explore.png" >
+              </div>
+      
+              <div class="option-text">
+                Explore
+              </div>
+
+              <div class="sidebar-left-option-tooltip">Explore</div>
+    
+            </div>
+  
+          </div>
+  
+          <div class="option-container">
+  
+            <div class="option-container-hover">
+    
+              <div class="option-icon-container">
+                <img class="option-icon" src="side-bar-icons/notifications.png" >
+              </div>
+      
+              <div class="option-text">
+                Notifications
+              </div>
+
+              <div class="sidebar-left-option-tooltip">Notifications</div>
+    
+            </div>
+  
+          </div>
+  
+          <div class="option-container">
+  
+            <div class="option-container-hover">
+    
+              <div class="option-icon-container">
+                <img class="option-icon" src="side-bar-icons/messages.png" >
+              </div>
+      
+              <div class="option-text">
+                Messages
+              </div>
+    
+              <div class="sidebar-left-option-tooltip">Messages</div>
+
+            </div>
+  
+          </div>
+  
+          <div class="option-container">
+  
+            <div class="option-container-hover">
+    
+              <div class="option-icon-container">
+                <img class="option-icon" src="side-bar-icons/grok.png" >
+              </div>
+      
+              <div class="option-text">
+                Grok
+              </div>
+
+              <div class="sidebar-left-option-tooltip">Grok</div>
+    
+            </div>
+  
+          </div>
+  
+          <div class="option-container">
+  
+            <div class="option-container-hover">
+    
+              <div class="option-icon-container">
+                <img class="option-icon" src="side-bar-icons/bookmarks.png" >
+              </div>
+      
+              <div class="option-text">
+                Bookmarks
+              </div>
+
+              <div class="sidebar-left-option-tooltip">Bookmarks</div>
+    
+            </div>
+  
+          </div>
+  
+          <div class="option-container">
+  
+            <div class="option-container-hover">
+    
+              <div class="option-icon-container">
+                <img class="option-icon" src="side-bar-icons/jobs.png" >
+              </div>
+      
+              <div class="option-text">
+                Jobs
+              </div>
+
+              <div class="sidebar-left-option-tooltip">Jobs</div>
+    
+            </div>
+  
+          </div>
+  
+          <div class="option-container">
+  
+            <div class="option-container-hover">
+    
+              <div class="option-icon-container">
+                <img class="option-icon" src="side-bar-icons/communities.png" >
+              </div>
+      
+              <div class="option-text">
+                Communities
+              </div>
+    
+              <div class="sidebar-left-option-tooltip">Communities</div>
+
+            </div>
+  
+          </div>
+  
+          <div class="option-container">
+  
+            <div class="option-container-hover">
+    
+              <div class="option-icon-container">
+                <img class="option-icon" src="side-bar-icons/premium.png" >
+              </div>
+      
+              <div class="option-text">
+                Premium
+              </div>
+
+              <div class="sidebar-left-option-tooltip">Premium</div>
+    
+            </div>
+  
+          </div>
+  
+          <div class="option-container">
+  
+            <div class="option-container-hover">
+    
+              <div class="option-icon-container">
+                <img class="option-icon" src="side-bar-icons/verified.png" >
+              </div>
+      
+              <div class="option-text">
+                Verified Orgs
+              </div>
+    
+              <div class="sidebar-left-option-tooltip">Verified Orgs</div>
+
+            </div>
+  
+          </div>
+  
+          <div class="option-container">
+  
+            <div class="option-container-hover">
+    
+              <div class="option-icon-container">
+                <img class="option-icon" src="side-bar-icons/profile.png" >
+              </div>
+      
+              <div class="option-text">
+                Profile
+              </div>
+
+              <div class="sidebar-left-option-tooltip">Profile</div>
+    
+            </div>
+  
+          </div>
+  
+          <div class="option-container">
+  
+            <div class="option-container-hover">
+    
+              <div class="option-icon-container">
+                <img class="option-icon" src="side-bar-icons/more.png" >
+              </div>
+      
+              <div class="option-text">
+                More
+              </div>
+
+              <div class="sidebar-left-option-tooltip">More</div>
+    
+            </div>
+  
+          </div>
+  
+          <div class="sidebar-left-option-post-button-container">
+
+            <button class="option-post-button">
+              <div class="option-post-button-text">Post</div> 
+              <img src="side-bar-icons/post.png" class="sidebar-left-option-post-button-icon">
+
+              <div class="sidebar-left-option-tooltip">Post</div>
+
+            </button>
+          </div>
+    
+        </div>
+  
+        <div class="user-profile-container">
+          <img class="user-profile-picture" src="user-profile-icons/husky.webp">
+  
+          <div class="user-info-container">
+            <div class="user-profile-name">Husky</div>
+            <div class="user-profile-address">@Yapper123</div>
+          </div>
+  
+          <div class="user-profile-options-container">
+  
+            <img class="user-profile-options" src="user-profile-icons/3-dots.png" >
+  
+          </div>
+
+          <div class="sidebar-left-option-tooltip">Accounts</div>
+  
+        </div>
+
+      </div>
+    </nav>
+    
+    
+
+    <nav class="sidebar-right">
+
+      <div class="sidebar-right-content-container">
+
+        <div class="search-field-container">
+          <div class="sidebar-right-search-field-icon-container">
+            <img src="right-sidebar-icons/search.png" class="sidebar-right-search-field-icon">
+          </div>
+          <input type="text" placeholder="Search" class="sidebar-right-search-input">
+
+          <div class="recent-search-container">
+              <div class="recent-search-header">
+                <div>
+                  Recent
+                </div>
+                <button class="recent-search-header-clear-button">
+                  Clear all
+                </button>
+              </div>
+
+              <div class="recent-search-profile-container">
+                <img src="profile-pictures/profile-picture-2.jpg" class="recent-search-profile-picture">
+                <div class="recent-search-profile-info-container">
+                  <div class="recent-search-author-info-container">
+                    <div class="recent-search-author-info-wraparound">
+                      <div>Path of Exile</div>
+                      <img src="post-icons/medal.png" class="recent-search-author-medal">
+                    </div>
+                    <div class="recent-search-author-address">@pathofexile</div>
+                  </div>
+                  <div class="recent-search-profile-x-button">
+                    x
+                  </div>
+                </div>
+              </div>
+          </div>
+        </div>
+
+        <div class="follow-suggest-container">
+          <div class="follow-sugges-header">
+            Who to follow
+          </div>
+
+          <div class="follow-suggest-profile-container">
+            <div class="follow-suggest-profile-picture-container">
+
+              <img src="profile-pictures/profile-picture-2.jpg" class="follow-suggest-profile-picture">
+
+              <div class="profile-picture-tooltip-container">
+                <div class="top-profile-container-tooltip">
+
+                  <img class="profile-picture-tooltip" src="./profile-pictures/profile-picture-2.jpg" >
+                  <button class="tooltip-follow-button">Follow</button>  
+
+                </div>
+                <div class="tooltip-author-name-container">
+                  <div class="tooltip-author-name">
+                    Path of Exile
+                  </div>
+                  <img class="button-img" src="./post-icons/medal.png" >
+                </div>
+                <div class="tooltip-author-address">@pathofexile</div>
+                <div>
+                  Path of Exile is a free-to-play online Action RPG set in the dark fantasy world of Wraeclast. Available on PC, macOS, PlayStation and Xbox now.
+                </div>
+                <div class="tooltip-bottom-info-container">
+                  <div>
+                      <div class="tooltip-following-container"> <span class="tooltip-following-span">289 </span> Following</div>
+                  </div>
+                  <div> 
+                      <div class="tooltip-followers-container"> <span class="tooltip-followers-span">395.4k </span> Followers</div>
+                  </div>
+                </div>
+                <div class="tooltip-bottom-button-container">
+                  <button class="tooltip-bottom-button"><img class="button-img" src="./post-icons/twitter.png" > <div>Profile Summary</div></button>
+                </div>
+              </div>
+
+            </div>
+            <div class="follow-suggest-profile-info-container">
+              <div class="follow-suggest-author-info-container">
+
+                <div class="follow-suggest-author-info-wraparound">
+
+                  <div class="follow-suggest-author-name">Path of Exile</div>
+                  <img src="post-icons/medal.png" class="follow-suggest-author-medal">
+
+                  <div class="profile-picture-tooltip-container">
+                    <div class="top-profile-container-tooltip">
+    
+                      <img class="profile-picture-tooltip" src="./profile-pictures/profile-picture-2.jpg" >
+                      <button class="tooltip-follow-button">Follow</button>  
+    
+                    </div>
+                    <div class="tooltip-author-name-container">
+                      <div class="tooltip-author-name">
+                        Path of Exile
+                      </div>
+                      <img class="button-img" src="./post-icons/medal.png" >
+                    </div>
+                    <div class="tooltip-author-address">@pathofexile</div>
+                    <div>
+                      Path of Exile is a free-to-play online Action RPG set in the dark fantasy world of Wraeclast. Available on PC, macOS, PlayStation and Xbox now.
+                    </div>
+                    <div class="tooltip-bottom-info-container">
+                      <div>
+                          <div class="tooltip-following-container"> <span class="tooltip-following-span">294 </span> Following</div>
+                      </div>
+                      <div> 
+                          <div class="tooltip-followers-container"> <span class="tooltip-followers-span">354.4K </span> Followers</div>
+                      </div>
+                    </div>
+                    <div class="tooltip-bottom-button-container">
+                      <button class="tooltip-bottom-button"><img class="button-img" src="./post-icons/twitter.png" > <div>Profile Summary</div></button>
+                    </div>
+                  </div>
+
+                </div>
+
+                <div class="follow-suggest-author-address-container">
+
+                  <div class="follow-suggest-author-address">@pathofexile</div>
+
+                  <div class="profile-picture-tooltip-container">
+                    <div class="top-profile-container-tooltip">
+    
+                      <img class="profile-picture-tooltip" src="./profile-pictures/profile-picture-2.jpg" >
+                      <button class="tooltip-follow-button">Follow</button>  
+    
+                    </div>
+                    <div class="tooltip-author-name-container">
+                      <div class="tooltip-author-name">
+                        Path of Exile
+                      </div>
+                      <img class="button-img" src="./post-icons/medal.png" >
+                    </div>
+                    <div class="tooltip-author-address">@pathofexile</div>
+                    <div>
+                      Path of Exile is a free-to-play online Action RPG set in the dark fantasy world of Wraeclast. Available on PC, macOS, PlayStation and Xbox now.
+                    </div>
+                    <div class="tooltip-bottom-info-container">
+                      <div>
+                          <div class="tooltip-following-container"> <span class="tooltip-following-span">289 </span> Following</div>
+                      </div>
+                      <div> 
+                          <div class="tooltip-followers-container"> <span class="tooltip-followers-span">354.4K </span> Followers</div>
+                      </div>
+                    </div>
+                    <div class="tooltip-bottom-button-container">
+                      <button class="tooltip-bottom-button"><img class="button-img" src="./post-icons/twitter.png" > <div>Profile Summary</div></button>
+                    </div>
+                  </div>
+
+                </div>
+
+              </div>
+              <div class="follow-suggest-follow-button">
+                Follow
+              </div>
+            </div>
+          </div>
+
+          <div class="follow-suggest-profile-container">
+            <div class="follow-suggest-profile-picture-container">
+
+              <img src="profile-pictures/profile-picture-4.jpg" class="follow-suggest-profile-picture">
+
+              <div class="profile-picture-tooltip-container">
+                <div class="top-profile-container-tooltip">
+
+                  <img class="profile-picture-tooltip" src="./profile-pictures/profile-picture-4.jpg" >
+                  <button class="tooltip-follow-button">Follow</button>  
+
+                </div>
+                <div class="tooltip-author-name-container">
+                  <div class="tooltip-author-name">
+                    ConcernedApe
+                  </div>
+                  <img class="button-img" src="./post-icons/medal.png" >
+                </div>
+                <div class="tooltip-author-address">@ConcernedApe</div>
+                <div>
+                  creator of Stardew Valley -- working on "Haunted Chocolatier"
+                </div>
+                <div class="tooltip-bottom-info-container">
+                  <div>
+                      <div class="tooltip-following-container"> <span class="tooltip-following-span">94 </span> Following</div>
+                  </div>
+                  <div> 
+                      <div class="tooltip-followers-container"> <span class="tooltip-followers-span">1.3M </span> Followers</div>
+                  </div>
+                </div>
+                <div class="tooltip-bottom-button-container">
+                  <button class="tooltip-bottom-button"><img class="button-img" src="./post-icons/twitter.png" > <div>Profile Summary</div></button>
+                </div>
+              </div>
+
+            </div>
+            <div class="follow-suggest-profile-info-container">
+              <div class="follow-suggest-author-info-container">
+
+                <div class="follow-suggest-author-info-wraparound">
+
+                  <div class="follow-suggest-author-name">ConcernedApe</div>
+                  <img src="post-icons/medal.png" class="follow-suggest-author-medal">
+
+                  <div class="profile-picture-tooltip-container">
+                    <div class="top-profile-container-tooltip">
+    
+                      <img class="profile-picture-tooltip" src="./profile-pictures/profile-picture-4.jpg" >
+                      <button class="tooltip-follow-button">Follow</button>  
+    
+                    </div>
+                    <div class="tooltip-author-name-container">
+                      <div class="tooltip-author-name">
+                        ConcernedApe
+                      </div>
+                      <img class="button-img" src="./post-icons/medal.png" >
+                    </div>
+                    <div class="tooltip-author-address">@ConcernedApe</div>
+                    <div>
+                      creator of Stardew Valley -- working on "Haunted Chocolatier"
+                    </div>
+                    <div class="tooltip-bottom-info-container">
+                      <div>
+                          <div class="tooltip-following-container"> <span class="tooltip-following-span">94 </span> Following</div>
+                      </div>
+                      <div> 
+                          <div class="tooltip-followers-container"> <span class="tooltip-followers-span">1.3M </span> Followers</div>
+                      </div>
+                    </div>
+                    <div class="tooltip-bottom-button-container">
+                      <button class="tooltip-bottom-button"><img class="button-img" src="./post-icons/twitter.png" > <div>Profile Summary</div></button>
+                    </div>
+                  </div>
+
+                </div>
+
+                <div class="follow-suggest-author-address-container">
+
+                  <div class="follow-suggest-author-address">@ConcernedApe</div>
+
+                  <div class="profile-picture-tooltip-container">
+                    <div class="top-profile-container-tooltip">
+    
+                      <img class="profile-picture-tooltip" src="./profile-pictures/profile-picture-4.jpg" >
+                      <button class="tooltip-follow-button">Follow</button>  
+    
+                    </div>
+                    <div class="tooltip-author-name-container">
+                      <div class="tooltip-author-name">
+                        ConcernedApe
+                      </div>
+                      <img class="button-img" src="./post-icons/medal.png" >
+                    </div>
+                    <div class="tooltip-author-address">@ConcernedApe</div>
+                    <div>
+                      creator of Stardew Valley -- working on "Haunted Chocolatier"
+                    </div>
+                    <div class="tooltip-bottom-info-container">
+                      <div>
+                          <div class="tooltip-following-container"> <span class="tooltip-following-span">94 </span> Following</div>
+                      </div>
+                      <div> 
+                          <div class="tooltip-followers-container"> <span class="tooltip-followers-span">1.3M </span> Followers</div>
+                      </div>
+                    </div>
+                    <div class="tooltip-bottom-button-container">
+                      <button class="tooltip-bottom-button"><img class="button-img" src="./post-icons/twitter.png" > <div>Profile Summary</div></button>
+                    </div>
+                  </div>
+
+                </div>
+
+              </div>
+              <div class="follow-suggest-follow-button">
+                Follow
+              </div>
+            </div>
+          </div>
+
+          <div class="follow-suggest-profile-container">
+            <div class="follow-suggest-profile-picture-container">
+
+              <img src="profile-pictures/profile-picture-1.jpg" class="follow-suggest-profile-picture">
+
+              <div class="profile-picture-tooltip-container">
+                <div class="top-profile-container-tooltip">
+
+                  <img class="profile-picture-tooltip" src="./profile-pictures/profile-picture-1.jpg" >
+                  <button class="tooltip-follow-button">Follow</button>  
+
+                </div>
+                <div class="tooltip-author-name-container">
+                  <div class="tooltip-author-name">
+                    Brawlhalla
+                  </div>
+                  <img class="button-img" src="./post-icons/medal.png" >
+                </div>
+                <div class="tooltip-author-address">@Brawlhalla</div>
+                <div>
+                  Brawlhalla, the free to play fighting game. Cross-play on Switch, Xbox, PlayStation, PC, Mac, iOS, and Android. Esports
+                </div>
+                <div class="tooltip-bottom-info-container">
+                  <div>
+                      <div class="tooltip-following-container"> <span class="tooltip-following-span">298 </span> Following</div>
+                  </div>
+                  <div> 
+                      <div class="tooltip-followers-container"> <span class="tooltip-followers-span">807.9K </span> Followers</div>
+                  </div>
+                </div>
+                <div class="tooltip-bottom-button-container">
+                  <button class="tooltip-bottom-button"><img class="button-img" src="./post-icons/twitter.png" > <div>Profile Summary</div></button>
+                </div>
+              </div>
+
+            </div>
+            <div class="follow-suggest-profile-info-container">
+              <div class="follow-suggest-author-info-container">
+
+                <div class="follow-suggest-author-info-wraparound">
+
+                  <div class="follow-suggest-author-name">Brawlhalla</div>
+                  <img src="post-icons/medal.png" class="follow-suggest-author-medal">
+
+                  <div class="profile-picture-tooltip-container">
+                    <div class="top-profile-container-tooltip">
+    
+                      <img class="profile-picture-tooltip" src="./profile-pictures/profile-picture-1.jpg" >
+                      <button class="tooltip-follow-button">Follow</button>  
+    
+                    </div>
+                    <div class="tooltip-author-name-container">
+                      <div class="tooltip-author-name">
+                        Brawlhalla
+                      </div>
+                      <img class="button-img" src="./post-icons/medal.png" >
+                    </div>
+                    <div class="tooltip-author-address">@Brawlhalla</div>
+                    <div>
+                      Brawlhalla, the free to play fighting game. Cross-play on Switch, Xbox, PlayStation, PC, Mac, iOS, and Android. Esports
+                    </div>
+                    <div class="tooltip-bottom-info-container">
+                      <div>
+                          <div class="tooltip-following-container"> <span class="tooltip-following-span">298 </span> Following</div>
+                      </div>
+                      <div> 
+                          <div class="tooltip-followers-container"> <span class="tooltip-followers-span">807.9K </span> Followers</div>
+                      </div>
+                    </div>
+                    <div class="tooltip-bottom-button-container">
+                      <button class="tooltip-bottom-button"><img class="button-img" src="./post-icons/twitter.png" > <div>Profile Summary</div></button>
+                    </div>
+                  </div>
+
+                </div>
+
+                <div class="follow-suggest-author-address-container">
+
+                  <div class="follow-suggest-author-address">@Brawlhalla</div>
+
+                  <div class="profile-picture-tooltip-container">
+                    <div class="top-profile-container-tooltip">
+    
+                      <img class="profile-picture-tooltip" src="./profile-pictures/profile-picture-1.jpg" >
+                      <button class="tooltip-follow-button">Follow</button>  
+    
+                    </div>
+                    <div class="tooltip-author-name-container">
+                      <div class="tooltip-author-name">
+                        Brawlhalla
+                      </div>
+                      <img class="button-img" src="./post-icons/medal.png" >
+                    </div>
+                    <div class="tooltip-author-address">@Brawlhalla</div>
+                    <div>
+                      Brawlhalla, the free to play fighting game. Cross-play on Switch, Xbox, PlayStation, PC, Mac, iOS, and Android. Esports
+                    </div>
+                    <div class="tooltip-bottom-info-container">
+                      <div>
+                          <div class="tooltip-following-container"> <span class="tooltip-following-span">298 </span> Following</div>
+                      </div>
+                      <div> 
+                          <div class="tooltip-followers-container"> <span class="tooltip-followers-span">807.9K </span> Followers</div>
+                      </div>
+                    </div>
+                    <div class="tooltip-bottom-button-container">
+                      <button class="tooltip-bottom-button"><img class="button-img" src="./post-icons/twitter.png" > <div>Profile Summary</div></button>
+                    </div>
+                  </div>
+
+                </div>
+
+              </div>
+              <div class="follow-suggest-follow-button">
+                Follow
+              </div>
+            </div>
+          </div>
+
+
+
+          <div class="follow-suggest-show-more-button">
+            Show more
+          </div>
+        </div>
+
+        <div class="right-sidebar-news-container">
+          <div class="right-sidebar-news-header">
+            What's Happening
+          </div>
+          <div class="right-sidebar-news-option-container">
+
+            <div class="right-sidebar-news-option-header">
+              <div class="right-sidebar-news-option-header-text">
+                Music · Trending
+              </div>
+              <div class="right-sidebar-news-option-button-container">
+                
+                <div class="right-sidebar-news-option-button-hover"></div>
+                <img src="right-sidebar-icons/3-dots.png" class="right-sidebar-news-option-button">
+                <div class="right-sidebar-news-option-button-tooltip"> More</div>
+             
+              </div>
+            </div>
+            <div class="right-sidebar-news-option-pointOfInterest">
+              Sweet Dreams
+            </div>
+            <div class="right-sidebar-news-option-posts-count">
+              261K posts
+            </div>
+
+          </div>
+
+          <div class="right-sidebar-news-option-container">
+
+            <div class="right-sidebar-news-option-header">
+              <div class="right-sidebar-news-option-header-text">
+                Trending in Romania
+              </div>
+              <div class="right-sidebar-news-option-button-container">
+                
+                <div class="right-sidebar-news-option-button-hover"></div>
+                <img src="right-sidebar-icons/3-dots.png" class="right-sidebar-news-option-button">
+                <div class="right-sidebar-news-option-button-tooltip"> More</div>
+             
+              </div>
+            </div>
+            <div class="right-sidebar-news-option-pointOfInterest">
+              Carti
+            </div>
+            <div class="right-sidebar-news-option-posts-count">
+              334K posts
+            </div>
+
+          </div>
+
+          <div class="right-sidebar-news-option-container">
+
+            <div class="right-sidebar-news-option-header">
+              <div class="right-sidebar-news-option-header-text">
+                Trending in Romania
+              </div>
+              <div class="right-sidebar-news-option-button-container">
+                
+                <div class="right-sidebar-news-option-button-hover"></div>
+                <img src="right-sidebar-icons/3-dots.png" class="right-sidebar-news-option-button">
+                <div class="right-sidebar-news-option-button-tooltip"> More</div>
+             
+              </div>
+            </div>
+            <div class="right-sidebar-news-option-pointOfInterest">
+              Europeans
+            </div>
+            <div class="right-sidebar-news-option-posts-count">
+              28.2K posts
+            </div>
+
+          </div>
+
+          <div class="right-sidebar-news-option-container">
+
+            <div class="right-sidebar-news-option-header">
+              <div class="right-sidebar-news-option-header-text">
+                Trending in Romania
+              </div>
+              <div class="right-sidebar-news-option-button-container">
+                
+                <div class="right-sidebar-news-option-button-hover"></div>
+                <img src="right-sidebar-icons/3-dots.png" class="right-sidebar-news-option-button">
+                <div class="right-sidebar-news-option-button-tooltip"> More</div>
+             
+              </div>
+            </div>
+            <div class="right-sidebar-news-option-pointOfInterest">
+              The US
+            </div>
+            <div class="right-sidebar-news-option-posts-count">
+              1.29M posts
+            </div>
+
+          </div>
+
+          <div class="follow-suggest-show-more-button">
+            Show more
+          </div>
+        </div>
+
+      </div>
+
+    </nav>
+    
+    
+    <main>
+      
+        <header>
+          <div class="button-section">For you</div>
+          <div class="button-section"> Following</div>
+        </header>
+
+        <section class="post-grid">
+
+          <div class="post">
+
+            <div class="profile-picture-container-column">
+                <div class="profile-picture-container">
+
+                  <img class="profile-picture" src="./profile-pictures/profile-picture-2.jpg"> 
+                  
+                  <div class="profile-picture-tooltip-container">
+                    <div class="top-profile-container-tooltip">
+    
+                      <img class="profile-picture-tooltip" src="./profile-pictures/profile-picture-2.jpg" >
+                      <button class="tooltip-follow-button">Follow</button>  
+    
+                    </div>
+                    <div class="tooltip-author-name-container">
+                      <div class="tooltip-author-name">
+                        Path of Exile
+                      </div>
+                      <img class="button-img" src="./post-icons/medal.png" >
+                    </div>
+                    <div class="tooltip-author-address">@pathofexile</div>
+                    <div>
+                      Path of Exile is a free-to-play online Action RPG set in the dark fantasy world of Wraeclast. Available on PC, macOS, PlayStation and Xbox now.
+                    </div>
+                    <div class="tooltip-bottom-info-container">
+                      <div>
+                          <div class="tooltip-following-container"> <span class="tooltip-following-span">289 </span> Following</div>
+                      </div>
+                      <div> 
+                          <div class="tooltip-followers-container"> <span class="tooltip-followers-span">395.4k </span> Followers</div>
+                      </div>
+                    </div>
+                    <div class="tooltip-bottom-button-container">
+                      <button class="tooltip-bottom-button"><img class="button-img" src="./post-icons/twitter.png" > <div>Profile Summary</div></button>
+                    </div>
+                  </div>
+
+                </div>
+
+              </div>
+
+
+            <div class="post-info">
+
+              <div class="author-info-container">
+                <div class="author-info">
+                  <div class="author-name-container">
+                    
+                    <div class="author-name">
+                      Path of Exile
+                    </div>
+                    
+                    <div class="profile-picture-tooltip-container">
+                      <div class="top-profile-container-tooltip">
+      
+                        <img class="profile-picture-tooltip" src="./profile-pictures/profile-picture-2.jpg" >
+                        <button class="tooltip-follow-button">Follow</button>  
+      
+                      </div>
+                      <div class="tooltip-author-name-container">
+                        <div class="tooltip-author-name">
+                          Path of Exile
+                        </div>
+                        <img class="button-img" src="./post-icons/medal.png" >
+                      </div>
+                      <div class="tooltip-author-address">@pathofexile</div>
+                      <div>
+                        Path of Exile is a free-to-play online Action RPG set in the dark fantasy world of Wraeclast. Available on PC, macOS, PlayStation and Xbox now.
+                      </div>
+                      <div class="tooltip-bottom-info-container">
+                        <div>
+                            <div class="tooltip-following-container"> <span class="tooltip-following-span">289 </span> Following</div>
+                        </div>
+                        <div> 
+                            <div class="tooltip-followers-container"> <span class="tooltip-followers-span">395.4k </span> Followers</div>
+                        </div>
+                      </div>
+                      <div class="tooltip-bottom-button-container">
+                        <button class="tooltip-bottom-button"><img class="button-img" src="./post-icons/twitter.png" > <div>Profile Summary</div></button>
+                      </div>
+                    </div>
+                    
+                  </div>
+
+
+                  <img class="button-img" src="./post-icons/medal.png" >
+
+                  <div class="author-address-container">
+
+                    <div class="author-address">@pathofexile·Mar 9</div>
+
+                    <div class="profile-picture-tooltip-container">
+                      <div class="top-profile-container-tooltip">
+      
+                        <img class="profile-picture-tooltip" src="./profile-pictures/profile-picture-2.jpg" >
+                        <button class="tooltip-follow-button">Follow</button>  
+      
+                      </div>
+                      <div class="tooltip-author-name-container">
+                        <div class="tooltip-author-name">
+                          Path of Exile
+                        </div>
+                        <img class="button-img" src="./post-icons/medal.png" >
+                      </div>
+                      <div class="tooltip-author-address">@Brawlhalla</div>
+                      <div>
+                        Path of Exile is a free-to-play online Action RPG set in the dark fantasy world of Wraeclast. Available on PC, macOS, PlayStation and Xbox now.
+                      </div>
+                      <div class="tooltip-bottom-info-container">
+                        <div>
+                            <div class="tooltip-following-container"> <span class="tooltip-following-span">289 </span> Following</div>
+                        </div>
+                        <div> 
+                            <div class="tooltip-followers-container"> <span class="tooltip-followers-span">395.4k </span> Followers</div>
+                        </div>
+                      </div>
+                      <div class="tooltip-bottom-button-container">
+                        <button class="tooltip-bottom-button"><img class="button-img" src="./post-icons/twitter.png" > <div>Profile Summary</div></button>
+                      </div>
+                    </div>
+
+                  </div>
+                </div>
+                <div class="author-right-buttons-container">
+                  <div class="author-right-button-x">
+                    <div  class="button-hover-color">
+                      <img class="button-img" src="./post-icons/twitter.png">
+                      <div class="tooltip">Explain this post</div>
+                    </div>
+                  </div>
+                  <div class="author-right-button-dots">
+                    <div  class="button-hover-color">
+                      <img class="button-img" src="post-icons/3-dots.png" >
+                      <div class="tooltip">More</div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div>It has been a while since we've highlighted the artistic talents of our community, 
+                so we've gathered up some of the Path of Exile 2 fanart created by talented Exiles! Check them out in today's news post.
+                </div>
+
+              <div class="post-content-container">
+                <img class="post-content" src="./post-content/post-2.jpg" >
+              </div>
+
+              <div class="post-bar-buttons-container">
+                <div class="buttons-info">
+                  <div  class="button-hover-color">
+                    <img class="button-img" src="post-icons/reply-icon.png">
+                  </div>
+                  <div class="button-count">71</div>
+                  <div class="tooltip">Reply</div>
+                </div>
+
+                <div class="buttons-info">
+                  <div  class="button-hover-color">
+                    <img class="button-img" src="post-icons/repost-icon.png">
+                  </div>
+                  <div class="button-count">45</div>
+                  <div class="tooltip">Repost</div>
+                </div>
+
+                <div class="buttons-info">
+                  <div  class="button-hover-color">
+                    <img class="button-img" src="post-icons/like-icon.png">
+                  </div>
+                  <div class="button-count">929</div>
+                  <div class="tooltip">Like</div>
+
+                </div>
+                
+                <div class="buttons-info">
+                  <div  class="button-hover-color">
+                    <img class="button-img" src="post-icons/view-icon.png">
+                  </div>
+                  <div class="button-count">92K</div>
+                  <div class="tooltip">View</div>
+
+                </div>
+
+                <div class="post-buttons-right-side" >
+                   <div  class="bookmark-button-hover-color">
+                     <img class="button-img" src="post-icons/bookmark-icon.png">
+                     <div class="tooltip">Bookmark</div>
+                   </div>
+
+                    <div  class="share-button-hover-color">
+                      <img class="button-img" src="post-icons/share-icon.png">
+                      <div class="tooltip">Share</div>
+                    </div>
+
+                </div>
+                
+              </div>
+
+            </div>
+
+
+          </div>
+
+          <div class="post">
+
+            <div class="profile-picture-container-column">
+                <div class="profile-picture-container">
+
+                  <img class="profile-picture" src="./profile-pictures/profile-picture-3.jpg"> 
+                  
+                  <div class="profile-picture-tooltip-container">
+                    <div class="top-profile-container-tooltip">
+    
+                      <img class="profile-picture-tooltip" src="./profile-pictures/profile-picture-3.jpg" >
+                      <button class="tooltip-follow-button">Follow</button>  
+    
+                    </div>
+                    <div class="tooltip-author-name-container">
+                      <div class="tooltip-author-name">
+                        HELLDIVERS™ 2
+                      </div>
+                      <img class="button-img" src="./post-icons/medal.png" >
+                    </div>
+                    <div class="tooltip-author-address">@helldivers2</div>
+                    <div>
+                      HELLDIVERS 2 developed by @ArrowheadGS on PS5 and PC! Join us GIVE 'EM HELL.
+                    </div>
+                    <div class="tooltip-bottom-info-container">
+                      <div>
+                          <div class="tooltip-following-container"> <span class="tooltip-following-span">9 </span> Following</div>
+                      </div>
+                      <div> 
+                          <div class="tooltip-followers-container"> <span class="tooltip-followers-span">644.1k </span> Followers</div>
+                      </div>
+                    </div>
+                    <div class="tooltip-bottom-button-container">
+                      <button class="tooltip-bottom-button"><img class="button-img" src="./post-icons/twitter.png" > <div>Profile Summary</div></button>
+                    </div>
+                  </div>
+
+                </div>
+
+              </div>
+
+
+            <div class="post-info">
+
+              <div class="author-info-container">
+                <div class="author-info">
+                  <div class="author-name-container">
+                    
+                    <div class="author-name">
+                      HELLDIVERS™ 2
+                    </div>
+                    
+                    <div class="profile-picture-tooltip-container">
+                      <div class="top-profile-container-tooltip">
+      
+                        <img class="profile-picture-tooltip" src="./profile-pictures/profile-picture-3.jpg" >
+                        <button class="tooltip-follow-button">Follow</button>  
+      
+                      </div>
+                      <div class="tooltip-author-name-container">
+                        <div class="tooltip-author-name">
+                          HELLDIVERS™ 2
+                        </div>
+                        <img class="button-img" src="./post-icons/medal.png" >
+                      </div>
+                      <div class="tooltip-author-address">@helldivers2</div>
+                      <div>
+                        HELLDIVERS 2 developed by @ArrowheadGS on PS5 and PC! Join us GIVE 'EM HELL.
+                      </div>
+                      <div class="tooltip-bottom-info-container">
+                        <div>
+                            <div class="tooltip-following-container"> <span class="tooltip-following-span">9 </span> Following</div>
+                        </div>
+                        <div> 
+                            <div class="tooltip-followers-container"> <span class="tooltip-followers-span">644.1k </span> Followers</div>
+                        </div>
+                      </div>
+                      <div class="tooltip-bottom-button-container">
+                        <button class="tooltip-bottom-button"><img class="button-img" src="./post-icons/twitter.png" > <div>Profile Summary</div></button>
+                      </div>
+                    </div>
+                    
+                  </div>
+
+
+                  <img class="button-img" src="./post-icons/medal.png" >
+
+                  <div class="author-address-container">
+
+                    <div class="author-address">@helldivers2·Mar 4</div>
+
+                    <div class="profile-picture-tooltip-container">
+                      <div class="top-profile-container-tooltip">
+      
+                        <img class="profile-picture-tooltip" src="./profile-pictures/profile-picture-3.jpg" >
+                        <button class="tooltip-follow-button">Follow</button>  
+      
+                      </div>
+                      <div class="tooltip-author-name-container">
+                        <div class="tooltip-author-name">
+                          HELLDIVERS™ 2
+                        </div>
+                        <img class="button-img" src="post-icons/medal.png" >
+                      </div>
+                      <div class="tooltip-author-address">@helldivers2</div>
+                      <div>
+                        HELLDIVERS 2 developed by @ArrowheadGS on PS5 and PC! Join us GIVE 'EM HELL.
+                      </div>
+                      <div class="tooltip-bottom-info-container">
+                        <div>
+                            <div class="tooltip-following-container"> <span class="tooltip-following-span">9 </span> Following</div>
+                        </div>
+                        <div> 
+                            <div class="tooltip-followers-container"> <span class="tooltip-followers-span">644.1k </span> Followers</div>
+                        </div>
+                      </div>
+                      <div class="tooltip-bottom-button-container">
+                        <button class="tooltip-bottom-button"><img class="button-img" src="./post-icons/twitter.png" > <div>Profile Summary</div></button>
+                      </div>
+                    </div>
+
+                  </div>
+                </div>
+                <div class="author-right-buttons-container">
+                  <div class="author-right-button-x">
+                    <div  class="button-hover-color">
+                      <img class="button-img" src="./post-icons/twitter.png">
+                      <div class="tooltip">Explain this post</div>
+                    </div>
+                  </div>
+                  <div class="author-right-button-dots">
+                    <div  class="button-hover-color">
+                      <img class="button-img" src="post-icons/3-dots.png" >
+                      <div class="tooltip">More</div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div>How do you like those numbers, Helldivers?💪Through the Galactic War you’ve been 
+                crushing tyranny and spreading Managed Democracy with unrelenting firepower! Your dedication 
+                to the cause is nothing short of legendary. Keep exterminating threats, keep the bullets flying, and let’s give 'em hell!
+                </div>
+
+              <div class="post-content-container">
+                <img class="post-content" src="post-content/post-3.jpg" >
+              </div>
+
+              <div class="post-bar-buttons-container">
+                <div class="buttons-info">
+                  <div  class="button-hover-color">
+                    <img class="button-img" src="post-icons/reply-icon.png">
+                  </div>
+                  <div class="button-count">165</div>
+                  <div class="tooltip">Reply</div>
+                </div>
+
+                <div class="buttons-info">
+                  <div  class="button-hover-color">
+                    <img class="button-img" src="post-icons/repost-icon.png">
+                  </div>
+                  <div class="button-count">1.3K</div>
+                  <div class="tooltip">Repost</div>
+                </div>
+
+                <div class="buttons-info">
+                  <div  class="button-hover-color">
+                    <img class="button-img" src="post-icons/like-icon.png">
+                  </div>
+                  <div class="button-count">12K</div>
+                  <div class="tooltip">Like</div>
+
+                </div>
+                
+                <div class="buttons-info">
+                  <div  class="button-hover-color">
+                    <img class="button-img" src="post-icons/view-icon.png">
+                  </div>
+                  <div class="button-count">279K</div>
+                  <div class="tooltip">View</div>
+
+                </div>
+
+                <div class="post-buttons-right-side" >
+                   <div  class="bookmark-button-hover-color">
+                     <img class="button-img" src="post-icons/bookmark-icon.png">
+                     <div class="tooltip">Bookmark</div>
+                   </div>
+
+                    <div  class="share-button-hover-color">
+                      <img class="button-img" src="post-icons/share-icon.png">
+                      <div class="tooltip">Share</div>
+                    </div>
+
+                </div>
+                
+              </div>
+
+            </div>
+
+
+          </div>
+
+          <div class="post">
+
+            <div class="profile-picture-container-column">
+                <div class="profile-picture-container">
+
+                  <img class="profile-picture" src="./profile-pictures/profile-picture-4.jpg"> 
+                  
+                  <div class="profile-picture-tooltip-container">
+                    <div class="top-profile-container-tooltip">
+    
+                      <img class="profile-picture-tooltip" src="./profile-pictures/profile-picture-4.jpg" >
+                      <button class="tooltip-follow-button">Follow</button>  
+    
+                    </div>
+                    <div class="tooltip-author-name-container">
+                      <div class="tooltip-author-name">
+                        ConcernedApe
+                      </div>
+                      <img class="button-img" src="./post-icons/medal.png" >
+                    </div>
+                    <div class="tooltip-author-address">@ConcernedApe</div>
+                    <div>
+                      creator of Stardew Valley -- working on "Haunted Chocolatier"
+                    </div>
+                    <div class="tooltip-bottom-info-container">
+                      <div>
+                          <div class="tooltip-following-container"> <span class="tooltip-following-span">94 </span> Following</div>
+                      </div>
+                      <div> 
+                          <div class="tooltip-followers-container"> <span class="tooltip-followers-span">1.3M </span> Followers</div>
+                      </div>
+                    </div>
+                    <div class="tooltip-bottom-button-container">
+                      <button class="tooltip-bottom-button"><img class="button-img" src="./post-icons/twitter.png" > <div>Profile Summary</div></button>
+                    </div>
+                  </div>
+
+                </div>
+
+              </div>
+
+
+            <div class="post-info">
+
+              <div class="author-info-container">
+                <div class="author-info">
+                  <div class="author-name-container">
+                    
+                    <div class="author-name">
+                      ConcernedApe
+                    </div>
+                    
+                    <div class="profile-picture-tooltip-container">
+                      <div class="top-profile-container-tooltip">
+      
+                        <img class="profile-picture-tooltip" src="./profile-pictures/profile-picture-4.jpg" >
+                        <button class="tooltip-follow-button">Follow</button>  
+      
+                      </div>
+                      <div class="tooltip-author-name-container">
+                        <div class="tooltip-author-name">
+                          ConcernedApe
+                        </div>
+                        <img class="button-img" src="./post-icons/medal.png" >
+                      </div>
+                      <div class="tooltip-author-address">@ConcernedApe</div>
+                      <div>
+                        creator of Stardew Valley -- working on "Haunted Chocolatier"
+                      </div>
+                      <div class="tooltip-bottom-info-container">
+                        <div>
+                            <div class="tooltip-following-container"> <span class="tooltip-following-span">94 </span> Following</div>
+                        </div>
+                        <div> 
+                            <div class="tooltip-followers-container"> <span class="tooltip-followers-span">1.3M </span> Followers</div>
+                        </div>
+                      </div>
+                      <div class="tooltip-bottom-button-container">
+                        <button class="tooltip-bottom-button"><img class="button-img" src="./post-icons/twitter.png" > <div>Profile Summary</div></button>
+                      </div>
+                    </div>
+                    
+                  </div>
+
+
+                  <img class="button-img" src="./post-icons/medal.png" >
+
+                  <div class="author-address-container">
+
+                    <div class="author-address">@ConcernedApe·Apr 18, 2024</div>
+
+                    <div class="profile-picture-tooltip-container">
+                      <div class="top-profile-container-tooltip">
+      
+                        <img class="profile-picture-tooltip" src="./profile-pictures/profile-picture-4.jpg" >
+                        <button class="tooltip-follow-button">Follow</button>  
+      
+                      </div>
+                      <div class="tooltip-author-name-container">
+                        <div class="tooltip-author-name">
+                          ConcernedApe
+                        </div>
+                        <img class="button-img" src="post-icons/medal.png" >
+                      </div>
+                      <div class="tooltip-author-address">@ConcernedApe</div>
+                      <div>
+                        creator of Stardew Valley -- working on "Haunted Chocolatier"
+                      </div>
+                      <div class="tooltip-bottom-info-container">
+                        <div>
+                            <div class="tooltip-following-container"> <span class="tooltip-following-span">94 </span> Following</div>
+                        </div>
+                        <div> 
+                            <div class="tooltip-followers-container"> <span class="tooltip-followers-span">1.3M</span> Followers</div>
+                        </div>
+                      </div>
+                      <div class="tooltip-bottom-button-container">
+                        <button class="tooltip-bottom-button"><img class="button-img" src="./post-icons/twitter.png" > <div>Profile Summary</div></button>
+                      </div>
+                    </div>
+
+                  </div>
+                </div>
+                <div class="author-right-buttons-container">
+                  <div class="author-right-button-x">
+                    <div  class="button-hover-color">
+                      <img class="button-img" src="./post-icons/twitter.png">
+                      <div class="tooltip">Explain this post</div>
+                    </div>
+                  </div>
+                  <div class="author-right-button-dots">
+                    <div  class="button-hover-color">
+                      <img class="button-img" src="post-icons/3-dots.png" >
+                      <div class="tooltip">More</div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div>The 1.6.4 update is out for PC! This patch adds some new content, as well as many improvements, balance changes, and bug fixes.</div>
+
+              <div class="post-content-container">
+                <img class="post-content" src="post-content/post-4.png" >
+              </div>
+
+              <div class="post-bar-buttons-container">
+                <div class="buttons-info">
+                  <div  class="button-hover-color">
+                    <img class="button-img" src="post-icons/reply-icon.png">
+                  </div>
+                  <div class="button-count">1.1K</div>
+                  <div class="tooltip">Reply</div>
+                </div>
+
+                <div class="buttons-info">
+                  <div  class="button-hover-color">
+                    <img class="button-img" src="post-icons/repost-icon.png">
+                  </div>
+                  <div class="button-count">5.7K</div>
+                  <div class="tooltip">Repost</div>
+                </div>
+
+                <div class="buttons-info">
+                  <div  class="button-hover-color">
+                    <img class="button-img" src="post-icons/like-icon.png">
+                  </div>
+                  <div class="button-count">60K</div>
+                  <div class="tooltip">Like</div>
+
+                </div>
+                
+                <div class="buttons-info">
+                  <div  class="button-hover-color">
+                    <img class="button-img" src="post-icons/view-icon.png">
+                  </div>
+                  <div class="button-count">2M</div>
+                  <div class="tooltip">View</div>
+
+                </div>
+
+                <div class="post-buttons-right-side" >
+                   <div  class="bookmark-button-hover-color">
+                     <img class="button-img" src="post-icons/bookmark-icon.png">
+                     <div class="tooltip">Bookmark</div>
+                   </div>
+
+                    <div  class="share-button-hover-color">
+                      <img class="button-img" src="post-icons/share-icon.png">
+                      <div class="tooltip">Share</div>
+                    </div>
+
+                </div>
+                
+              </div>
+
+            </div>
+
+
+          </div>
+
+          <div class="post">
+
+            <div class="profile-picture-container-column">
+                <div class="profile-picture-container">
+
+                  <img class="profile-picture" src="./profile-pictures/profile-picture-1.jpg"> 
+                  
+                  <div class="profile-picture-tooltip-container">
+                    <div class="top-profile-container-tooltip">
+    
+                      <img class="profile-picture-tooltip" src="./profile-pictures/profile-picture-1.jpg" >
+                      <button class="tooltip-follow-button">Follow</button>  
+    
+                    </div>
+                    <div class="tooltip-author-name-container">
+                      <div class="tooltip-author-name">
+                        Brawlhalla
+                      </div>
+                      <img class="button-img" src="./post-icons/medal.png" >
+                    </div>
+                    <div class="tooltip-author-address">@Brawlhalla</div>
+                    <div>
+                      Brawlhalla, the free to play fighting game. Cross-play on Switch, Xbox, PlayStation, PC, Mac, iOS, and Android. Esports
+                    </div>
+                    <div class="tooltip-bottom-info-container">
+                      <div>
+                          <div class="tooltip-following-container"> <span class="tooltip-following-span">298 </span> Following</div>
+                      </div>
+                      <div> 
+                          <div class="tooltip-followers-container"> <span class="tooltip-followers-span">807.9K </span> Followers</div>
+                      </div>
+                    </div>
+                    <div class="tooltip-bottom-button-container">
+                      <button class="tooltip-bottom-button"><img class="button-img" src="./post-icons/twitter.png" > <div>Profile Summary</div></button>
+                    </div>
+                  </div>
+
+                </div>
+
+              </div>
+
+
+            <div class="post-info">
+
+              <div class="author-info-container">
+                <div class="author-info">
+                  <div class="author-name-container">
+                    
+                    <div class="author-name">
+                      Brawlhalla
+                    </div>
+                    
+                    <div class="profile-picture-tooltip-container">
+                      <div class="top-profile-container-tooltip">
+      
+                        <img class="profile-picture-tooltip" src="./profile-pictures/profile-picture-1.jpg" >
+                        <button class="tooltip-follow-button">Follow</button>  
+      
+                      </div>
+                      <div class="tooltip-author-name-container">
+                        <div class="tooltip-author-name">
+                          Brawlhalla
+                        </div>
+                        <img class="button-img" src="./post-icons/medal.png" >
+                      </div>
+                      <div class="tooltip-author-address">@Brawlhalla</div>
+                      <div>
+                        Brawlhalla, the free to play fighting game. Cross-play on Switch, Xbox, PlayStation, PC, Mac, iOS, and Android. Esports
+                      </div>
+                      <div class="tooltip-bottom-info-container">
+                        <div>
+                            <div class="tooltip-following-container"> <span class="tooltip-following-span">298 </span> Following</div>
+                        </div>
+                        <div> 
+                            <div class="tooltip-followers-container"> <span class="tooltip-followers-span">807.9K </span> Followers</div>
+                        </div>
+                      </div>
+                      <div class="tooltip-bottom-button-container">
+                        <button class="tooltip-bottom-button"><img class="button-img" src="./post-icons/twitter.png" > <div>Profile Summary</div></button>
+                      </div>
+                    </div>
+                    
+                  </div>
+
+
+                  <img class="button-img" src="./post-icons/medal.png" >
+
+                  <div class="author-address-container">
+
+                    <div class="author-address">@Brawlhalla·Feb 4</div>
+
+                    <div class="profile-picture-tooltip-container">
+                      <div class="top-profile-container-tooltip">
+      
+                        <img class="profile-picture-tooltip" src="./profile-pictures/profile-picture-1.jpg" >
+                        <button class="tooltip-follow-button">Follow</button>  
+      
+                      </div>
+                      <div class="tooltip-author-name-container">
+                        <div class="tooltip-author-name">
+                          Brawlhalla
+                        </div>
+                        <img class="button-img" src="post-icons/medal.png" >
+                      </div>
+                      <div class="tooltip-author-address">@Brawlhalla</div>
+                      <div>
+                        Brawlhalla, the free to play fighting game. Cross-play on Switch, Xbox, PlayStation, PC, Mac, iOS, and Android. Esports
+                      </div>
+                      <div class="tooltip-bottom-info-container">
+                        <div>
+                            <div class="tooltip-following-container"> <span class="tooltip-following-span">298 </span> Following</div>
+                        </div>
+                        <div> 
+                            <div class="tooltip-followers-container"> <span class="tooltip-followers-span">807.9K </span> Followers</div>
+                        </div>
+                      </div>
+                      <div class="tooltip-bottom-button-container">
+                        <button class="tooltip-bottom-button"><img class="button-img" src="./post-icons/twitter.png" > <div>Profile Summary</div></button>
+                      </div>
+                    </div>
+
+                  </div>
+                </div>
+                <div class="author-right-buttons-container">
+                  <div class="author-right-button-x">
+                    <div  class="button-hover-color">
+                      <img class="button-img" src="./post-icons/twitter.png">
+                      <div class="tooltip">Explain this post</div>
+                    </div>
+                  </div>
+                  <div class="author-right-button-dots">
+                    <div  class="button-hover-color">
+                      <img class="button-img" src="post-icons/3-dots.png" >
+                      <div class="tooltip">More</div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div>The Radiant Blade Priya joins Brawlhalla on February 5th 🗓️</div>
+
+              <div class="post-content-container">
+                <img class="post-content" src="post-content/post-1.png" >
+              </div>
+
+              <div class="post-bar-buttons-container">
+                <div class="buttons-info">
+                  <div  class="button-hover-color">
+                    <img class="button-img" src="post-icons/reply-icon.png">
+                  </div>
+                  <div class="button-count">52</div>
+                  <div class="tooltip">Reply</div>
+                </div>
+
+                <div class="buttons-info">
+                  <div  class="button-hover-color">
+                    <img class="button-img" src="post-icons/repost-icon.png">
+                  </div>
+                  <div class="button-count">386</div>
+                  <div class="tooltip">Repost</div>
+                </div>
+
+                <div class="buttons-info">
+                  <div  class="button-hover-color">
+                    <img class="button-img" src="post-icons/like-icon.png">
+                  </div>
+                  <div class="button-count">1K</div>
+                  <div class="tooltip">Like</div>
+
+                </div>
+                
+                <div class="buttons-info">
+                  <div  class="button-hover-color">
+                    <img class="button-img" src="post-icons/view-icon.png">
+                  </div>
+                  <div class="button-count">13K</div>
+                  <div class="tooltip">View</div>
+
+                </div>
+
+                <div class="post-buttons-right-side" >
+                   <div  class="bookmark-button-hover-color">
+                     <img class="button-img" src="post-icons/bookmark-icon.png">
+                     <div class="tooltip">Bookmark</div>
+                   </div>
+
+                    <div  class="share-button-hover-color">
+                      <img class="button-img" src="post-icons/share-icon.png">
+                      <div class="tooltip">Share</div>
+                    </div>
+
+                </div>
+                
+              </div>
+
+            </div>
+
+
+          </div>
+
+        </section>
+
+      </main>
+
+
+
+
+  </body> 
+
+</html>

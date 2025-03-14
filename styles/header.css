@@ -1,0 +1,52 @@
+header
+{
+display: flex;
+position: sticky;
+top: 0;
+
+height: 53px;
+z-index: 100;
+opacity: .9;
+flex-direction: row;
+
+border-color:rgb(54, 47, 47);
+border-width: 1px;
+border-style: solid;
+
+border-top: none;
+
+
+
+}
+
+.button-section
+{
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: background-color 0.15s;
+  background-color: black;
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.button-section:hover
+{
+  background-color: rgb(19, 19, 19);
+  cursor: pointer;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+

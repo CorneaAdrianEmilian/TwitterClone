@@ -1,0 +1,331 @@
+.sidebar-left
+{
+  display: flex;
+  position: fixed;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  width: 30.87%;
+  height: 955px;
+  z-index: 101;
+
+  flex-direction: column;
+
+  justify-content: space-between;
+  align-items: end;
+
+}
+
+.sidebar-left-content-container
+{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 0 8px;
+  flex-grow: 1;
+}
+
+.sidebar-options-container
+{
+display: flex;
+flex-direction: column;
+justify-content: space-between;
+width: 100%;
+
+}
+
+
+.option-container-logo
+{
+  display:flex;
+}
+
+
+.option-container
+{
+  display:flex;
+  cursor: pointer;
+  flex: 1;
+
+}
+
+.option-container-logo-hover,.option-container-hover
+{
+display: flex;
+align-items: center;
+justify-content: center;
+padding: 12px;
+transition: background-color 0.15s;
+margin-bottom: 5px;
+position: relative;
+}
+
+.option-container-logo-hover
+{
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.option-container-hover
+{
+  border-radius: 25px;
+}
+
+.option-container:hover .option-container-hover,.option-container-logo-hover:hover
+{
+  background-color: rgb(24, 24, 24);
+
+}
+
+.option-icon-container
+{
+display: flex;
+margin: 0px;
+}
+
+.option-icon
+{
+height: 28px;
+width: 28px;
+
+}
+
+.option-text
+{
+  margin-left: 20px;
+  margin-right: 16px;
+  font-weight: bold;
+  font-size: 18px;
+}
+
+
+.sidebar-left-option-tooltip
+{
+  font-size: 12px;
+  padding: 4px;
+  background-color: rgba(146, 146, 146, 0.9);
+  border-radius: 10%;
+  position: absolute;
+  opacity: 0;
+  transition: opacity 0.3s;
+  pointer-events:none ;
+  white-space: nowrap;
+  z-index: 103;
+  
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, 100%);
+
+
+}
+
+
+
+.sidebar-left-option-post-button-container
+{
+position: relative;
+display: flex;
+}
+
+.option-post-button
+{
+  flex: 1;
+  font-weight: bold;
+  font-size: 18px;
+  color: black;
+  background-color: white;
+  padding: 15px 32px;
+  border-radius: 30px;
+  margin-top: 10px;
+  margin-right: 25px;
+  border-style: solid;
+  border: none;
+}
+
+.option-post-button:hover
+{
+  cursor: pointer;
+  background-color: rgb(221, 221, 221);
+}
+
+
+.sidebar-left-option-post-button-icon
+{
+  height: 28px;
+  width: 28px;
+  display: none;
+}
+
+
+
+.user-profile-container
+{
+
+  display: flex;
+  flex-direction: row;
+  column-gap:  12px;
+  justify-content:  start;
+  width: 259px;
+  padding: 12px;
+  margin-bottom: 12px;
+  
+}
+
+.user-profile-container:hover
+{
+background-color: rgb(20, 20, 20);
+border-radius: 30px;
+cursor: pointer;
+}
+
+
+
+
+
+.user-profile-picture
+{
+  height: 40px;
+  width: 40px;
+  border-radius: 20px;
+  object-fit:fill;
+  object-position: center;
+
+}
+
+
+
+.user-info-container {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  justify-content: space-around;
+}
+
+.user-profile-name
+{
+  font-size: 16px;
+  font-weight: bold;
+  color: white;
+}
+
+.user-profile-address
+{
+  font-size: 16px;
+  color: rgb(185, 185, 185);
+}
+
+.user-profile-options-container
+{
+  flex-grow: 1; 
+  display:flex;
+  justify-content: end;
+  align-items: center;
+}
+.user-profile-options
+{
+  height: 25px;
+  width: 25px;
+}
+
+
+
+@media (max-width: 1327px)
+{
+
+  .sidebar-left
+  {
+    width: 85px;
+  }
+
+
+  .option-container-logo,
+  .option-container
+  {
+    justify-content:  end;
+
+  }
+
+
+  .option-text
+  {
+    display: none;
+  }
+
+  .option-container-hover:hover  .sidebar-left-option-tooltip
+  {
+    opacity: 1;
+    transition-delay: 0.5s;
+
+  }
+
+
+  .sidebar-left-option-post-button-container
+  {
+    justify-content: end;
+  }
+
+  .option-post-button
+  {
+    flex:initial;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 12px;
+    transition: background-color 0.15s;
+    margin-bottom: 5px;
+    position: relative;
+
+  }
+
+  .option-post-button  .sidebar-left-option-tooltip
+  {
+    color: white;
+    font-weight: initial;
+  }
+
+  .option-post-button-text
+  {
+    display: none;
+  }
+
+
+  .sidebar-left-option-post-button-icon
+{
+  display:initial;
+}
+
+  .option-post-button
+  {
+    
+    margin:0;
+  }
+
+
+  .sidebar-left-option-post-button-container:hover .sidebar-left-option-tooltip
+  {
+    opacity: 1;
+    transition-delay: 0.5s;
+
+  }
+
+  .user-info-container,
+  .user-profile-options-container
+  {
+    display: none;
+  }
+
+
+  .user-profile-container
+  {
+    width: 100%;
+    position: relative;
+    max-width: fit-content;
+  }
+
+  .user-profile-container:hover .sidebar-left-option-tooltip
+  {
+    transform: translate(-50%, -275%);
+    opacity: 1;
+    transition-delay: 0.5s;
+  }
+}
